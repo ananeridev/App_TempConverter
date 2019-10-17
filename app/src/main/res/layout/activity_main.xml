@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:padding="16dp">
+
+   <EditText
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:id="@+id/valorTemp"
+       android:hint="Digite a temperatura"
+       android:inputType="numberDecimal"
+       />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/radioGroup">
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/converterButoon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CONVERTER TEMPERATURA"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="133dp" />
+
+    <RadioButton
+        android:id="@+id/fahrenheitRadio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:text="Fahrenheit"
+        tools:layout_editor_absoluteX="-1dp"
+        tools:layout_editor_absoluteY="90dp" />
+
+    <RadioButton
+        android:id="@+id/celciusRadio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:checked="false"
+        android:text="Celcius"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="45dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
